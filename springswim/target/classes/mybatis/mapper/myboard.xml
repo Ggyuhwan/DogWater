@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "//mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.future2.my.myboard.dao.IMyBoardDAO">
+
+<select id="getMyBoardList" resultType="MyBoardVO">
+	SELECT seq
+	     , mem_Id
+	     , title
+	     , upload
+	     , division
+	     , skil
+	     , stroke
+	     , detail
+	     , distance
+	     , ssat
+	     , cyc
+	from exercise
+</select>
+
+ <insert id="writeMyBoard" parameterType="MyBoardVO">
+	INSERT INTO exercise(
+	                   seq
+	                 , mem_Id
+	                 , skil
+	                 , stroke
+	                 , distance
+	                 , ssat
+	                 , cyc
+	                 ) 
+			VALUES (
+			          (SELECT NVL(MAX(seq),0) +1
+			           FROM exercise) 
+			         , #{memId}
+			         , #{skil}
+			         , #{stroke}
+			         , #{distance}
+			         , #{ssat}
+			         , #{cyc}
+			         )
+</insert> 
+
+</mapper>

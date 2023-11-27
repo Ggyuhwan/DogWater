@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "//mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace = "com.future2.my.display.dao.IMainDAO">
+<!-- 운동량 조회 -->
+<select id="getMainList" resultType="MainVO">
+SELECT skil
+        ,stroke
+        ,detail
+        ,distance
+        ,ssat
+        ,cyc
+FROM prgm
+where division in 'a01'
+</select>
+
+<select id="getMainList2" resultType="MainVO">
+SELECT skil
+        ,stroke
+        ,detail
+        ,distance
+        ,ssat
+        ,cyc
+FROM prgm
+where division in 'b01'
+</select>
+
+<select id="getMainList3" resultType="MainVO">
+SELECT skil
+        ,stroke
+        ,detail
+        ,distance
+        ,ssat
+        ,cyc
+FROM prgm
+where division in 'c01'
+</select>
+
+</mapper>
