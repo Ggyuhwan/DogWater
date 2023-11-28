@@ -1,4 +1,5 @@
-# DogWater
+# 개인프로젝트23.9.13 ~ 23.9.27
+# DogWater 
 ![스크린샷 2023-09-26 143957](https://github.com/Ggyuhwan/DogWater/assets/133470173/a3171bca-03f4-4ec3-869f-e3db8d6faad2)
 
 # 메인 화면 
