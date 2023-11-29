@@ -3,7 +3,7 @@
 # 로그인 및 회원가입 화면
 ![스크린샷 2023-09-26 141046](https://github.com/Ggyuhwan/DogWater/assets/133470173/72e5eb39-bedd-4be5-bfb8-6c373c5d745c)
 # 메인 화면 
-![스크린샷 2023-09-26 143957](https://github.com/Ggyuhwan/DogWater/assets/133470173/a3171bca-03f4-4ec3-869f-e3db8d6faad2)
+![home](https://github.com/Ggyuhwan/DogWater/assets/133470173/7938d15d-f4f9-48c3-b428-0539ef616658)
 
 
 
